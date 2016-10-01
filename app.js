@@ -9,12 +9,15 @@ function LunchCheckController($scope) {
   $scope.lunchItems = "";
   $scope.message = "";
   $scope.checkIfTooMuch = function () {
-    var numberOfItems =  calculateNumberOfItems($scope.lunchItems);
-
-    if(numberOfItems <= 3){
-        $scope.message = "Enjoy!";
+    if($scope.lunchItems == ""){
+         $scope.message = "Please enter data first!";
     }else{
-      $scope.message = "Too much!";
+      var numberOfItems =  calculateNumberOfItems($scope.lunchItems);
+      if(numberOfItems <= 3){
+          $scope.message = "Enjoy!";
+      }else{
+        $scope.message = "Too much!";
+      }
     }
   };
 
