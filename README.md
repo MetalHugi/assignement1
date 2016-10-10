@@ -1,2 +1,2 @@
-# assignement1
-First assignment of Coursera AngularJS course.
+# assignment2
+2. assignment of AngularJS coursera course
